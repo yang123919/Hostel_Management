@@ -1,5 +1,7 @@
 package com.example.project.MockDatas
 
+import com.example.project.model.TenantData
+
 
 class MockTenantDatas {
 
@@ -8,75 +10,71 @@ class MockTenantDatas {
 
             TenantData(
                 1,
-                "John Tan",
+                "Kangjie",
                 1,
                 "0123456789",
-                "john.tan@example.com",
+                "kangjie@example.com",
                 "01 Jan 2026"
             ),
 
             TenantData(
                 2,
-                "Sarah Lim",
+                "Qirun",
                 2,
                 "0112233445",
-                "sarah.lim@example.com",
+                "qirun@example.com",
                 "05 Jan 2026"
             ),
 
             TenantData(
                 3,
-                "Michael Lee",
+                "Rentai",
                 2,
                 "0178877665",
-                "michael.lee@example.com",
+                "rentai@example.com",
                 "10 Jan 2026"
             ),
 
             TenantData(
                 4,
-                "Alicia Wong",
-                3,
+                "Dominic",
+                1,
                 "0169988776",
-                "alicia.wong@example.com",
+                "dominic@example.com",
                 "15 Feb 2026"
             ),
 
             TenantData(
                 5,
-                "Nur Aisyah",
-                4,
+                "Junxiang",
+                2,
                 "0134455667",
-                "aisyah@example.com",
+                "junxiang@example.com",
                 "20 Feb 2026"
             ),
 
             TenantData(
                 6,
-                "Raj Kumar",
-                4,
+                "Piriyan",
+                2,
                 "0186677889",
-                "raj.kumar@example.com",
+                "ryan@example.com",
                 "01 Mar 2026"
             ),
 
             TenantData(
                 7,
-                "Chen Wei",
-                4,
-                "0197788990",
-                "chen.wei@example.com",
-                "12 Mar 2026"
-            ),
-
-            TenantData(
-                8,
-                "Farah Noor",
-                6,
-                "0145566778",
-                "farah.noor@example.com",
-                "18 Apr 2026"
+                "Ee Szen",
+                2,
+                "0186677889",
+                "eeszen@example.com",
+                "01 Mar 2025",
+                "01 Feb 2026",
+                status = TenantData.TenantStatus.CHECKED_OUT
             )
         )
+        fun getTenantById(id: Int): TenantData? {
+            return tenantList.find { it.id == id }
+        }
     }
 }

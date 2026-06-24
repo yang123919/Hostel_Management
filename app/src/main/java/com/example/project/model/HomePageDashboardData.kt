@@ -1,4 +1,4 @@
-package com.example.project.MockDatas
+package com.example.project.model
 
 import java.math.BigDecimal
 
@@ -18,5 +18,4 @@ data class HomePageDashboardData (
         if (totalRoomCount > 0)
             (occupiedRoomCount * 100) / totalRoomCount else 0
 
-    val vacantRoomCount: Int get() = totalRoomCount - occupiedRoomCount
 }

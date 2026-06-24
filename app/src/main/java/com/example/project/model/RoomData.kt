@@ -1,4 +1,4 @@
-package com.example.project.MockDatas
+package com.example.project.model
 
 
 data class RoomData(
@@ -7,7 +7,6 @@ data class RoomData(
     val image: Int,
     val roomType: RoomType,
     var occupiedCount: Int,
-    val floor: String,
     val monthlyRent: Double
 ) {
     enum class RoomType {

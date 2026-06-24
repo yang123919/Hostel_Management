@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.MockDatas.MockRoomDatas
-import com.example.project.MockDatas.PaymentData
+import com.example.project.model.PaymentData
 import com.example.project.R
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.core.content.ContextCompat

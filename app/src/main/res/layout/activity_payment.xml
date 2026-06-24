@@ -29,7 +29,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Revenue Banner -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -136,7 +135,6 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Paid | Unpaid | Overdue count cards -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -237,7 +235,6 @@
 
             </LinearLayout>
 
-            <!-- Filter chips -->
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/chipGroupFilter"
                 android:layout_width="match_parent"
@@ -249,7 +246,7 @@
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chipAll"
-                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="All"
@@ -257,28 +254,27 @@
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chipPaid"
-                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Paid"/>
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chipUnpaid"
-                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Unpaid"/>
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chipOverdue"
-                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Overdue"/>
 
             </com.google.android.material.chip.ChipGroup>
 
-            <!-- Empty state -->
             <TextView
                 android:id="@+id/tvEmpty"
                 android:layout_width="match_parent"
@@ -290,7 +286,6 @@
                 android:textColor="#BDBDBD"
                 android:visibility="gone"/>
 
-            <!-- List -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvPayments"
                 android:layout_width="match_parent"

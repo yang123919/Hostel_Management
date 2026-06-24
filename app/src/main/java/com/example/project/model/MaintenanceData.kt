@@ -1,15 +1,15 @@
-package com.example.project.MockDatas
+package com.example.project.model
 
 data class MaintenanceData(
     val id: Int,
     val roomId: Int,
+    val tenantId: Int,
     val title: String,
     val description: String,
-    var priority: Priority,
-    var status: Status,
-    val reporterName: String,
+    val priority: Priority,
+    val status: Status,
     val reportDate: String,
-    val photoResId: Int? = null
+    val photoResId: Int?=null
 ) {
 
     enum class Priority {

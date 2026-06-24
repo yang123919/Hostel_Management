@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.MockDatas.MockMaintenanceDatas
-import com.example.project.MockDatas.RoomData
+import com.example.project.model.RoomData
 import com.example.project.R
 import com.example.project.MaintenanceDetailActivity
 
@@ -55,7 +55,6 @@ class MaintenanceRoomAdapter(
         val room = rooms[position]
 
         holder.roomName.text = room.name
-        holder.floor.text = room.floor
         holder.roomType.text = room.roomType.name
 
         val count =

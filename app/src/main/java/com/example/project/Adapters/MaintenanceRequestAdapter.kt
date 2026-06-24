@@ -8,7 +8,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.project.MockDatas.MaintenanceData
+import com.example.project.MockDatas.MockTenantDatas
+import com.example.project.model.MaintenanceData
 import com.example.project.R
 
 class MaintenanceRequestAdapter(
@@ -34,7 +35,12 @@ class MaintenanceRequestAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val req = requests[position]
 
-        // Photo
+        val tenant = MockTenantDatas.tenantList.find {
+            it.id == req.tenantId
+        }
+
+        holder.tvReporter.text = "By ${tenant?.name ?: "Unknown Tenant"}"
+
         if (req.photoResId != null) {
             holder.ivPhoto.visibility = View.VISIBLE
             holder.ivPhoto.setImageResource(req.photoResId)
@@ -44,7 +50,7 @@ class MaintenanceRequestAdapter(
 
         holder.tvTitle.text       = req.title
         holder.tvDescription.text = req.description
-        holder.tvReporter.text    = "By ${req.reporterName}"
+        holder.tvReporter.text = "By ${tenant?.name ?: "Unknown Tenant"}"
         holder.tvDate.text        = req.reportDate
 
         // Priority badge

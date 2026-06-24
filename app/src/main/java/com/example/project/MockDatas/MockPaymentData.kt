@@ -1,5 +1,7 @@
 package com.example.project.MockDatas
 
+import com.example.project.model.PaymentData
+
 
 class MockPaymentData {
 
@@ -8,7 +10,7 @@ class MockPaymentData {
 
             PaymentData(
                 tenantId = 1,
-                tenantName = "John Tan",
+                tenantName = "Kangjie",
                 roomId = 1,
                 month = "June 2026",
                 amount = 500.0,
@@ -19,10 +21,10 @@ class MockPaymentData {
 
             PaymentData(
                 tenantId = 2,
-                tenantName = "Sarah Lim",
+                tenantName = "Qirun",
                 roomId = 2,
                 month = "June 2026",
-                amount = 450.0,
+                amount = 250.0,
                 status = PaymentData.PaymentStatus.PAID,
                 dueDate = "05 Jun 2026",
                 paidDate = "05 Jun 2026"
@@ -30,30 +32,30 @@ class MockPaymentData {
 
             PaymentData(
                 tenantId = 3,
-                tenantName = "Michael Lee",
+                tenantName = "Rentai",
                 roomId = 2,
                 month = "June 2026",
-                amount = 450.0,
+                amount = 250.0,
                 status = PaymentData.PaymentStatus.OVERDUE,
                 dueDate = "05 Jun 2026"
             ),
 
             PaymentData(
                 tenantId = 4,
-                tenantName = "Alicia Wong",
+                tenantName = "Dominic",
                 roomId = 3,
                 month = "June 2026",
-                amount = 480.0,
+                amount = 500.0,
                 status = PaymentData.PaymentStatus.UNPAID,
                 dueDate = "25 Jun 2026"
             ),
 
             PaymentData(
                 tenantId = 5,
-                tenantName = "Nur Aisyah",
+                tenantName = "Junxiang",
                 roomId = 4,
                 month = "June 2026",
-                amount = 380.0,
+                amount = 250.0,
                 status = PaymentData.PaymentStatus.PAID,
                 dueDate = "05 Jun 2026",
                 paidDate = "01 Jun 2026"
@@ -61,35 +63,13 @@ class MockPaymentData {
 
             PaymentData(
                 tenantId = 6,
-                tenantName = "Raj Kumar",
+                tenantName = "Piriyan",
                 roomId = 4,
                 month = "June 2026",
-                amount = 380.0,
+                amount = 250.0,
                 status = PaymentData.PaymentStatus.OVERDUE,
                 dueDate = "05 Jun 2026"
-            ),
-
-            PaymentData(
-                tenantId = 7,
-                tenantName = "Chen Wei",
-                roomId = 4,
-                month = "June 2026",
-                amount = 380.0,
-                status = PaymentData.PaymentStatus.UNPAID,
-                dueDate = "25 Jun 2026"
-            ),
-
-            PaymentData(
-                tenantId = 8,
-                tenantName = "Farah Noor",
-                roomId = 6,
-                month = "June 2026",
-                amount = 360.0,
-                status = PaymentData.PaymentStatus.PAID,
-                dueDate = "05 Jun 2026",
-                paidDate = "02 Jun 2026"
             )
         )
-
     }
 }

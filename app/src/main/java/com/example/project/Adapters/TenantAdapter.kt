@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.MockDatas.MockRoomDatas
-import com.example.project.MockDatas.TenantData
+import com.example.project.model.TenantData
 import com.example.project.R
 
 class TenantAdapter(
-    private val tenants: List<TenantData>
+    private var tenants: MutableList<TenantData>
 ) : RecyclerView.Adapter<TenantAdapter.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -69,6 +69,10 @@ class TenantAdapter(
         TenantData.TenantStatus.CHECKED_OUT -> Color.parseColor("#9E9E9E")
     }
 
+     fun updateList(newList: MutableList<TenantData>) {
+        tenants = newList
+        notifyDataSetChanged()
+    }
     private fun formatStatus(s: TenantData.TenantStatus) = when (s) {
         TenantData.TenantStatus.ACTIVE      -> "Active"
         TenantData.TenantStatus.CHECKED_OUT -> "Checked Out"

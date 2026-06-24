@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.Adapters.PaymentAdapter
 import com.example.project.MockDatas.MockPaymentData
-import com.example.project.MockDatas.PaymentData
+import com.example.project.model.PaymentData
 import com.google.android.material.chip.ChipGroup
 
 class PaymentActivity : AppCompatActivity() {

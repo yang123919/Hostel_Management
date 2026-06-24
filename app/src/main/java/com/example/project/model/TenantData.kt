@@ -1,4 +1,4 @@
-package com.example.project.MockDatas
+package com.example.project.model
 
 
 data class TenantData(

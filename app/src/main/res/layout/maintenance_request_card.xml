@@ -42,7 +42,7 @@
                     android:layout_weight="1"
                     android:textStyle="bold"
                     android:textSize="16sp"
-                    android:textColor="#212121"/>
+                    android:textColor="@android:color/white"/>
 
                 <TextView
                     android:id="@+id/tvPriority"
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
-                android:textColor="#616161"
+                android:textColor="@android:color/white"
                 android:lineSpacingExtra="2dp"
                 android:maxLines="3"
                 android:ellipsize="end"
